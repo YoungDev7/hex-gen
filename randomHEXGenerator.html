@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <!-- inspired by Pepa Mraz -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color generator</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- sidebar favorites -->
+    <div id="mySidenav" class="sidenav">
+        
+        <!-- <div class="sidenav-emptyText">no favorites</div> -->
+        <!-- <div class="sidenav-favItem">
+                <div class="sidenav-colorDisplayBox"></div>
+                <input type="text" class="sidenav-textColor"></input>
+                <span class="sidebar-copyButton"><i class="fa fa-file-o" aria-hidden="true"></i></span>
+                <span class="sidebar-removeButton"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+        </div>
+
+        <div class="sidenav-favItem">
+            <div class="sidenav-colorDisplayBox"></div>
+            <span class="sidenav-textColor">#bc9f70</span>
+            <span class="sidebar-copyButton"><i class="fa fa-file-o" aria-hidden="true"></i></span>
+        </div> -->
+
+    </div>
+<!-- Main -->
+<div id="main" onclick="closeNav()" >
+    <!-- main container -->
+        <div class="container">
+            <div class="text">
+                <div class="text1">random color</div> 
+                <div class="tooltip">
+                    <div class="textColor"></div>
+                    <span class="tooltiptext">Copy</span>
+                </div>
+            </div>
+            <div id="buttonGenerate">generate !</div>
+        </div>
+        <!-- set to fav star -->
+        <i id="setToFavStar" class="fa fa-star-o" style="color: black;" aria-hidden="true"></i>
+
+       
+</div>
+
+<!-- SIDE BUTTON FAV -->
+    <div class="sidebar">
+        <div onclick="openNav(), closeNav()"  class="sidebar-favorites sidebar-favorites_hover"><i id="fav-star" class="fa fa-star" style="color: #fdc446;" aria-hidden="true"></i></div>
+        
+    </div>
+
+
+
+
+
+
+</body>
+</html>

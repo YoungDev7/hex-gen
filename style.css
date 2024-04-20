@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 180%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    text-transform: uppercase;
+}
+
+#setToFavStar{
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    transition: .3s;
+}
+
+
+
+
+.container div {
+    display: inline;
+}
+
+.text{
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text1{
+    color: white;
+    margin-right: 10px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#buttonGenerate{
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+    margin-top: 8px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#buttonGenerate:hover{
+    background-color: #545454;
+}
+
+.textColor{
+    font-size: 120%;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 7px;
+    position: relative;
+
+}
+
+.textColor:hover{
+    -webkit-box-shadow:inset 0px 0px 0px 2px white;
+    -moz-box-shadow:inset 0px 0px 0px 2px white;
+    box-shadow:inset 0px 0px 0px 2px white;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    position: absolute;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+}
+
+/* sidebar favorites */
+
+.sidebar-favorites{
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* padding-right: 100px; */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    right: 0px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.sidebar-favorites_hover:hover{
+    /* right: -50px; */
+    padding-left: 50px;
+}
+
+.sidebar-favorites_hover:hover #fav-star{
+    left: -30px;
+}
+
+#fav-star{
+    position: relative;
+    left: 0px;
+    transition:left 0.5s;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  .sidenav > *:last-child{
+      margin-bottom: 80px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+
+  .sidenav-emptyText{
+      color: white;
+      font-size: 130%;
+      font-weight: bold;
+      position: absolute;
+      top: 35%;
+      left: 32%;
+      display: block;
+  }
+
+  .sidenav-favItem{
+      background-color: rgba(0, 0, 0, 0.4);
+      margin-bottom: 10px;
+      margin-left: 10px;
+      width: 275px;
+      padding: 4px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 8px;
+  }
+
+  .sidenav-colorDisplayBox{
+      height: 30px;
+      width: 30px;
+      background-color: burlywood;
+      margin-left: 10px;
+  }
+  
+  .sidenav-textColor{
+      margin-left: 10px;
+      color: #bbbbbb;
+  }
+
+  /* test WIP */
+  input.sidenav-textColor {
+      font-size: 80%;
+      width: 95px;
+      background-color: transparent;
+      position: absolute;
+      left: 50px;
+      border: none;
+  }
+
+  .sidebar-copyButton{
+    margin-left: auto;
+    padding: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: #bbbbbb;
+    margin-left: 200px;
+  }
+
+  .sidebar-removeButton{
+    margin-left: auto;
+    padding: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: #bbbbbb;
+    position: absolute;
+    left: 300px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+
+    
+  }
+
+  .sidebar-copyButton:hover{
+    background-color: #616161;
+  }
+
+  .sidebar-removeButton:hover{
+    background-color: #cecece;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-right .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* tool tip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: max-content;
+text-align: center;
+font-size: 70%;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 6px;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+bottom: 140%;
+left: 50%;
+margin-left: -20px;
+}
+
+.tooltip .tooltiptext::after {
+content: " ";
+position: absolute;
+top: 100%; /* At the bottom of the tooltip */
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
