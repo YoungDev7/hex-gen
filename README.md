@@ -6,4 +6,4 @@ Javascript web app that generates random hex value for color. Has few features t
 - click to copy to clipboard 
 - set color as favorite
 - name tag favorited colors
-- favorite colors are stored using local.storage
+- favorite colors are stored using localstorage
