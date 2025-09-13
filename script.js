@@ -12,18 +12,19 @@ applyHex();
 button.onclick = function(){
     let hexOut = applyHex();
     tooltiptext.innerHTML = "copy";
-    tooltiptext.style.marginLeft = "-20px";
+    tooltiptext.style.marginLeft = "-30px";
 };
 
 //copies to clipboard + toolip
 textColor.onclick = function(){
     tooltiptext.innerHTML = "copied!";
-    tooltiptext.style.marginLeft = "-30px";
+    tooltiptext.style.marginLeft = "-43px";
     CopyToClipboard(textColor.innerHTML);
     console.log(textColor.innerHTML + " has been copied to clipboard!");
+    
     setTimeout(function(){
         tooltiptext.innerHTML = "copy";
-        tooltiptext.style.marginLeft = "-20px";
+        tooltiptext.style.marginLeft = "-30px";
     }, 500);
 }
 
