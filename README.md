@@ -7,3 +7,8 @@ Javascript web app that generates random hex value for color. Has few features t
 - set color as favorite
 - name tag favorited colors
 - favorite colors are stored using localstorage
+
+## React Version
+[React version](https://github.com/YoungDev7/hex-gen-react)
+
+
