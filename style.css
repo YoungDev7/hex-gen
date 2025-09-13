@@ -295,3 +295,37 @@ border-color: black transparent transparent transparent;
 .tooltip:hover .tooltiptext {
 visibility: visible;
 }
+
+/* GITHUB BUTTON */
+.github-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.github-button a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.github-button a:hover {
+    background-color: #333;
+}
+
+.github-button a span {
+    margin-right: 8px;
+}
+
+.github-button a i {
+    font-size: 18px;
+}
